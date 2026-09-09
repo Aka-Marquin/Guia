@@ -1,8 +1,37 @@
 * {
-    margin: 0px;
+    margin: 5px;
     padding: 0px;
 }
 
 body {
     font-family: monospace;
+}
+
+.gpComandos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 0px;
+}
+
+.cartao {
+    width: calc(20% - 5px);
+    border: rgb(156, 156, 201) solid 3px;
+    border-radius: 20px;
+    background-color: lavender;
+    text-align: center;
+    padding: 1px 2px;
+    transition: 50ms;
+}
+
+.cartao:hover {
+    scale: 110%;
+    background-color: rgb(62, 62, 97);
+    color: white;
+    transform: translateY(-10%);
+}
+
+main h2{
+    text-align: center;
+    padding: 15px;
 }
