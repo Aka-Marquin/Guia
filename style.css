@@ -1,27 +1,53 @@
 * {
-    margin: 5px;
+    margin: 1px;
     padding: 0px;
 }
 
 body {
     font-family: monospace;
+    font-size: larger;
+}
+
+header{
+    height: 5vh;
+    background-color: rgb(208, 208, 235);
+    text-align: justify;
+    border: rgb(156, 156, 201) solid 4px;
+}
+
+main {
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    margin-block: auto;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    background-color: whitesmoke;
+}
+
+footer {
+    height: 5vh;
+    background-color: whitesmoke;
 }
 
 .gpComandos{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    gap: 0px;
+    gap: 2px;
 }
 
 .cartao {
-    width: calc(20% - 5px);
+    width: calc(20% - 1px);
     border: rgb(156, 156, 201) solid 3px;
     border-radius: 20px;
     background-color: lavender;
     text-align: center;
     padding: 1px 2px;
     transition: 50ms;
+    /*justify-content: space-between;*/
 }
 
 .cartao:hover {
@@ -29,9 +55,5 @@ body {
     background-color: rgb(62, 62, 97);
     color: white;
     transform: translateY(-10%);
-}
-
-main h2{
-    text-align: center;
-    padding: 15px;
+    box-shadow: 3px 3px 3px gray;
 }
