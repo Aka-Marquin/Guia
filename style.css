@@ -1,4 +1,4 @@
-* {
+/** {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
@@ -195,4 +195,204 @@ footer {
 }
 
 @media only screen and (min-width: 1200px) {
+}*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* PESQUISAR MELHOR */
+}
+ 
+body {
+    background-color: whitesmoke;
+    font-family: monospace;
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+ 
+/* ==================== HEADER ==================== */
+ 
+header {
+    display: flex;
+    justify-content: center;
+    font-size: x-large;
+    background-color: lavender;
+    padding: 15px 20px;
+}
+ 
+#aka {
+    font-size: 9.9px;
+    font-weight: bolder;
+    color: black;
+    text-decoration: none;
+}
+ 
+.icone {
+    fill: orangered;
+    stroke: black;
+    stroke-width: 10px;
+    width: 50px;
+    height: 50px;
+}
+ 
+ 
+/* ==================== (MAIN) ==================== */
+ 
+ 
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background-color: whitesmoke;
+    padding: 20px;
+}
+ 
+main h2 {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+ 
+/* ==================== DIV GERAL DOS CARTOES: Estiliza GERAL ==================== */
+ 
+.gpComandos {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
+    max-width: 1200px;
+}
+ 
+ 
+/* ==================== CARTOES: É para alterar os cartoes individuais, mas sacome né ==================== */
+ 
+ 
+.cartao {
+    border: 1px solid rgb(73, 0, 73);
+    border-radius: 25px;
+    background-color: lavender;
+    text-align: center;
+    padding: 20px 15px;
+    min-height: 160px;
+    height: auto;
+ 
+    /* TESTE 1 */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+ 
+    /* TESTE 2 */
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-wrap: break-word;
+ 
+    /* TESTE RESPONSIVIDADE 100%; É para deixar cada bloco preencher toda tela no celular, se nao der certo fudeu */
+    width: 100%;
+}
+ 
+.cartao h3 {
+    font-size: 17px;
+    padding: 5px;
+}
+ 
+/* ==================== RodaPE ==================== */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px auto;
+    padding: 15px;
+    border: 1.5px solid black;
+    font-size: 15px;
+    font-style: italic;
+    background-color: lavender;
+    width: 90%;
+    max-width: 600px;
+}
+ 
+#git {
+    font-weight: bolder;
+}
+ 
+/* ==================== MEDIA QUERIES ==================== */
+ 
+/* Celulares (até 600px) */
+ 
+@media only screen and (max-width: 600px) {
+    .gpComandos {
+        font-size: medium;
+    }
+    header {
+        font-size: medium;
+        background-color: burlywood;
+    }
+    .cartao {
+        background-color: burlywood;
+        width: 75%;
+    }
+    footer {
+        background-color: burlywood;
+    }
+}
+ 
+/* Tablets (601px até 991px) */
+ 
+@media only screen and (min-width: 601px) {
+    header {
+        font-size: medium;
+        color: lavender;
+        background-color: black;
+    }
+    .cartao {
+        background-color: rgb(46, 45, 45);
+        color: white;
+        border: 2px solid rgb(227, 231, 227);
+        width: calc(50% - 10px);
+    }
+    footer {
+       color: white;
+       background-color: black;
+    }
+
+    #aka {
+        color: white;
+    }
+}
+ 
+/* Computadores */
+ 
+@media only screen and (min-width: 992px) {
+    .gpComandos {
+        font-size: larger;
+    }
+    .cartao {
+        background-color: lavender;
+        color: black;
+        border: 1px solid purple;
+        width: calc(25% - 15px);
+    }
+    .cartao:hover {
+        background-color: rgb(62, 62, 97);
+        font-size: large;
+        color: white;
+        transform: translateY(-5%);
+        box-shadow: 3px 3px 3px purple;
+        transition: 50ms;
+    }
+    header {
+        background-color: lavender;
+        color: black;
+    }
+    footer {
+        background-color: lavender;
+        color: black;
+    }
+    body {
+        background-color: whitesmoke;
+    }
 }
