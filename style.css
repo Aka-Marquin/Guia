@@ -1,208 +1,9 @@
-/** {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    font-size: x-large;
-    background-color: lavender;
-}
-
-.icone {
-    fill:orangered;
-    stroke: black;
-    stroke-width: 10px;
-    width: 50px;
-    height: 50px;
-}
-
-body {
-    background-color: whitesmoke;
-    font-family: monospace;
-    font-size: large;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 45px;
-    font-size: 12.5px;
-    margin-block: 7.5px;
-}
-
-main h2 {
-    font-family: monospace;
-    padding-top: 35px;
-    font-size: 25px;
-    text-transform: uppercase;
-}
-
-.gpComandos{
-    display: flex;
-    flex-direction: column;
-    gap: 7px;
-}
-
-.cartao {
-    border: 1px solid rgb(73, 0, 73);
-    border-radius: 25px;
-    width: 85vw;
-    height: 20vh;  
-    background-color: lavender;
-    text-align: center;
-    padding-top: 20px;
-}
-
-.cartao h3 {
-    font-size: 15px;
-    text-align: center;
-    padding: 10px;
-}
-
-footer {
-    display: flex;
-    justify-self: center;
-    margin: 50px;
-    border: 1.5px solid black;
-    font-size: 15px;
-    font-style: italic;
-    background-color: lavender;
-}
-
-#git {
-    font-weight: bolder;
-}
-
-#aka {
-    font-size: 9.9px;
-    display: flex;
-    align-items: center;
-    font-weight: bolder;
-    color: black;
-}
-
-@media only screen and (max-width:600px){
-    .gpComandos {
-        font-size: large;
-    }
-    header{
-        font-size: medium;
-        align-items:center;
-        background-color:burlywood;
-    }
-
-    footer{
-        background-color: burlywood;
-        font-size: large;
-    }
-
-    .cartao{
-        background-color: burlywood;
-    }
-}
-
-@media only screen and (min-width: 601px) {
-    .gpComandos {
-        font-size: larger;
-        flex-direction: column;
-    }
-      header{
-        font-size: medium;
-        align-items:center;
-        background-color:lavender;
-    }
-
-    .cartao{
-        border: 2px solid black;
-    }
-     footer{
-        background-color: lavender;
-        font-size: large;
-        border: 2px solid black;
-    }
-        
-}
-
-@media only screen and (min-width: 768px) {
-    .cartao {
-        background-color: greenyellow;
-        border: 2px solid black;
-    }
-
-    header{
-        font-size: medium;
-        align-items:center;
-        background-color:greenyellow;
-    }
-
-     footer{
-        background-color: greenyellow;
-        font-size: large;
-        border: 2px solid black;
-    }
-
-    body{
-        background-color: rgb(230, 252, 198);
-    }
-}
-
-@media only screen and (min-width: 992px) {
-
-   .gpComandos{
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     justify-content: space-between;
-     gap: 2px;
-   }
-   
-    .cartao{
-        background-color: lavender;
-        border: 1px solid purple;
-        text-align: center;
-    }
-
-    .cartao:hover{
-        background-color: rgb(62, 62, 97);
-        font-size: large;
-        color: white;
-        scale: 100%;
-        transform: translateY(-5%);
-        box-shadow: 3px 3px 3px purple;
-    }
-
-    header{
-        font-size: medium;
-        align-items:center;
-        background-color:lavender;
-    }
-
-     footer{
-        background-color: lavender;
-        font-size: large;
-        border: 2px solid black;
-    }
-
-    body{
-        background-color: whitesmoke;
-    }
-
-
-}
-
-@media only screen and (min-width: 1200px) {
-}*/
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* PESQUISAR MELHOR */
+    box-sizing: border-box; /* PESQUISAR MELHOR O QUE FAZ*/
 }
- 
+
 body {
     background-color: whitesmoke;
     font-family: monospace;
@@ -233,8 +34,19 @@ header {
     fill: orangered;
     stroke: black;
     stroke-width: 10px;
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 35px;
+}
+
+.icon {
+    fill: orangered;
+    stroke: black;
+    stroke-width: 10px;
+    width: 40px;
+    height: 35px;
+    display: flex;
+    justify-self: right;
+
 }
  
  
@@ -344,14 +156,13 @@ footer {
  
 @media only screen and (min-width: 601px) {
     header {
-        font-size: medium;
+        font-size: large;
         color: lavender;
         background-color: black;
     }
     .cartao {
-        background-color: rgb(46, 45, 45);
+        background-color: black;
         color: white;
-        border: 2px solid rgb(227, 231, 227);
         width: calc(50% - 10px);
     }
     footer {
@@ -361,6 +172,9 @@ footer {
 
     #aka {
         color: white;
+        width: 35px;
+        height: 3px;
+        padding-top: 7px;
     }
 }
  
@@ -380,9 +194,9 @@ footer {
         background-color: rgb(62, 62, 97);
         font-size: large;
         color: white;
-        transform: translateY(-5%);
+        transform: translateY(-1%);
         box-shadow: 3px 3px 3px purple;
-        transition: 50ms;
+        transition: 100ms;
     }
     header {
         background-color: lavender;
