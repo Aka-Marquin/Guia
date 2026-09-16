@@ -38,7 +38,7 @@ header {
     height: 35px;
 }
 
-.icon {
+/*.icon {
     fill: orangered;
     stroke: black;
     stroke-width: 10px;
@@ -47,11 +47,10 @@ header {
     display: flex;
     justify-self: right;
 
-}
+}*/
  
  
 /* ==================== (MAIN) ==================== */
- 
  
 main {
     display: flex;
@@ -113,6 +112,7 @@ main h2 {
 }
  
 /* ==================== RodaPE ==================== */
+
 footer {
     display: flex;
     justify-content: center;
@@ -178,30 +178,43 @@ footer {
     }
 }
  
-/* Computadores */
+/* Computadores  */
  
 @media only screen and (min-width: 992px) {
     .gpComandos {
-        font-size: larger;
+        font-size: large;
+        min-height: 33vw;
+        min-width: 33vw;
+        gap: 15px;
+    }
     }
     .cartao {
         background-color: lavender;
         color: black;
         border: 1px solid purple;
-        width: calc(25% - 15px);
+        width: calc(50% - 25px);
     }
     .cartao:hover {
         background-color: rgb(62, 62, 97);
-        font-size: large;
+        font-size: larger;
         color: white;
-        transform: translateY(-1%);
+        transform: translateY(-10%);
         box-shadow: 3px 3px 3px purple;
-        transition: 100ms;
+       transition: 100ms;
     }
     header {
         background-color: lavender;
         color: black;
     }
+
+    main {
+        min-height: 79vh;
+    }
+
+     #aka {
+        color: black;
+    }
+
     footer {
         background-color: lavender;
         color: black;
@@ -209,4 +222,3 @@ footer {
     body {
         background-color: whitesmoke;
     }
-}
