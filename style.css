@@ -181,35 +181,36 @@ footer {
 /* Computadores  */
  
 @media only screen and (min-width: 992px) {
-    .gpComandos {
+       .gpComandos {
         font-size: large;
         min-height: 33vw;
         min-width: 33vw;
         gap: 15px;
     }
-    }
+    
     .cartao {
         background-color: lavender;
         color: black;
         border: 1px solid purple;
         width: calc(50% - 25px);
     }
+
     .cartao:hover {
         background-color: rgb(62, 62, 97);
         font-size: larger;
         color: white;
         transform: translateY(-10%);
         box-shadow: 3px 3px 3px purple;
-       transition: 100ms;
+        transition: 100ms;
     }
     header {
         background-color: lavender;
         color: black;
     }
 
-    main {
+    /*main {
         min-height: 79vh;
-    }
+    }*/
 
      #aka {
         color: black;
@@ -222,3 +223,6 @@ footer {
     body {
         background-color: whitesmoke;
     }
+
+ 
+}
