@@ -167,6 +167,10 @@ footer {
         font-size: x-large;
     }
 
+     main {
+        min-height: 80vh;
+    }
+
     .cartao h3 {
         font-size: larger;
     }
@@ -188,7 +192,7 @@ footer {
  
 @media only screen and (min-width: 992px) {
        .gpComandos {
-        font-size: large;
+        font-size: medium;
         min-height: 33vw;
         min-width: 33vw;
         gap: 15px;
@@ -199,14 +203,15 @@ footer {
         color: black;
         border: 1px solid purple;
         width: calc(50% - 25px);
+        font-size: larger;
     }
 
     .cartao:hover {
         background-color: rgb(62, 62, 97);
-        font-size: larger;
+        font-size: x-large;
         color: white;
-        transform: translateY(-10%);
-        transform: scale(1);
+        /*transform: translateY(-5%);*/
+        transform: scale(1.02);
         box-shadow: 3px 3px 3px purple;
     }
     header {
@@ -214,9 +219,9 @@ footer {
         color: black;
     }
 
-    /*main {
+    main {
         min-height: 79vh;
-    }*/
+    }
 
      #aka {
         color: black;
