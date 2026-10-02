@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: whitesmoke;
+    /*background-color: whitesmoke;*/
     font-family: monospace;
     font-size: large;
     display: flex;
@@ -34,21 +34,9 @@ header {
     fill: orangered;
     stroke: black;
     stroke-width: 10px;
-    width: 40px;
+    width: 35px;
     height: 35px;
 }
-
-/*.icon {
-    fill: orangered;
-    stroke: black;
-    stroke-width: 10px;
-    width: 40px;
-    height: 35px;
-    display: flex;
-    justify-self: right;
-
-}*/
- 
  
 /* ==================== (MAIN) ==================== */
  
@@ -235,3 +223,17 @@ footer {
         background-color: whitesmoke;
     }
 }
+
+#simples{
+    margin-left: 50px;
+    margin-bottom: 25px;
+    background-color: burlywood;
+    
+}
+
+.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8 {
+    background-color:black;
+    color: white;
+}
+
+

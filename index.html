@@ -6,63 +6,65 @@
 </head>
 
 <!---------------HEADER------------------>
-<body>
+<body class="cabeca">
     <header>
         <h1>Guia de Bolso Git</h1>
         <a href="https://git-scm.com/docs" target="_blank"> 
             <svg class="icone"><use href="assets/c1.svg"></use></svg></a>
         <a href="assets/bob.gif" target="_blank" id="aka">by aka Marquin</a>
+
+        <button id="simples">Day'n'Nite</button>
     </header>
 
 <!---------------MAIN------------------>
-    <main>
-    <h2>Comandos essenciais</h2>
 
+    <main class="claro" id="escuro">
+    <h2>Comandos essenciais</h2>
     <section class="gpComandos">
-    <div class="cartao">
-        <h3>git init <!--a><svg class="icon"><use href="assets/c1.svg"></use></svg></a--></h3>
+    <div class="cartao" id="cartao1">
+        <h3>git init</h3>
             <p>Cria uma pasta ".git" no seu dispositivo local, essa pasta armazena todos os commits/atualizações do seu projeto.</p>
             </div>
-    <div class="cartao">
-        <h3>git add <!--a><svg class="icon"><use href="assets/c2.svg"></use></svg></a--></h3>
+    <div class="cartao" id="cartao2">
+        <h3>git add</h3>
             <p>Adiciona todos os arquivos criados no projeto, basicamente deixa todos os arquivos "alinhados" para o commit.</p>
         </div>
-    <div class="cartao">
-        <h3>git commit -m "Escreva sua mensagem"<!--a><svg class="icon"><use href="assets/c3.svg"></use></svg></a--></h3>
+    <div class="cartao" id="cartao3">
+        <h3>git commit -m "Escreva sua mensagem"</h3>
              <p>Salva e adiciona uma mensagem descritiva do que foi alterado.</p>
              </div>
-    <div class="cartao">
+    <div class="cartao" id="cartao4">
         <h3>git push -u origin main</h3>
             <p>Aplica as alterações realizadas no repositorio local (GitHub)</p>
             </div>
-    <div class="cartao">
+    <div class="cartao" id="cartao5">
         <h3>git remote add origin [link do repositorio]</h3>
             <p>Conecta o repositório local ao repositorio remoto</p>
         </div>
 
-    <div class="cartao">
+    <div class="cartao" id="cartao6">
         <h3> git fetch</h3>
             <p>Verifica se o repositório remoto tem modificações em relação ao local.</p>
         </div>
     
-    <div class="cartao">
+    <div class="cartao" id="cartao7">
         <h3> git pull</h3>
             <p>Puxa as alterações que foram feitas "externamente", ou seja, o que foi commitado por terceiros (maquinas externas).</p>
         </div> 
 
-    <div class="cartao">
+    <div class="cartao" id="cartao8">
         <h3> git clone [link do repositorio] </h3>
             <p> Clona um repositório com todo o histórico de commits.</p>
         </div>
-    
-    
     </section>
-    </main>
 
-    <!---------------FOOTER------------------>
     <footer>
         <!--<hr>-->
         <p>Dica: Utilize o comando <a id="git">"git status"</a> para saber o estado atual do repositorio, no caso, se foi commitado ou não. </p>
     </footer>
+     <script src="apps.js"></script>
+
+
+    </main>
 </body>
 </html>
