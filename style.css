@@ -17,10 +17,13 @@ body {
  
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
     font-size: x-large;
     background-color: lavender;
     padding: 15px 20px;
+    gap: 25px;
 }
  
 #aka {
@@ -125,19 +128,26 @@ footer {
  
 @media only screen and (max-width: 600px) {
     .gpComandos {
-        font-size: medium;
+        font-size: large;
     }
     header {
         font-size: medium;
         background-color: burlywood;
     }
     .cartao {
+        font-size: large;
         background-color: burlywood;
-        width: 75%;
+        width: 80%;
     }
     footer {
         background-color: burlywood;
     }
+
+    .cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8{
+    background-color:black;
+    color: white;
+}
+
 }
  
 /* Tablets (601px até 991px) */
@@ -174,6 +184,11 @@ footer {
         height: 3px;
         padding-top: 7px;
     }
+
+    .cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8{
+    background-color:white;
+    color: black;
+}
 }
  
 /* Computadores  */
@@ -199,7 +214,7 @@ footer {
         font-size: x-large;
         color: white;
         /*transform: translateY(-5%);*/
-        transform: scale(1.02);
+        transform: scale(1);
         box-shadow: 3px 3px 3px purple;
     }
     header {
@@ -222,16 +237,14 @@ footer {
     body {
         background-color: whitesmoke;
     }
+
+    .cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8{
+    background-color:black;
+    color: white;
 }
 
 #simples{
     margin-left: 50px;
     margin-bottom: 25px;
 }
-
-.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8{
-    background-color:black;
-    color: white;
 }
-
-
