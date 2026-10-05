@@ -227,11 +227,9 @@ footer {
 #simples{
     margin-left: 50px;
     margin-bottom: 25px;
-    background-color: burlywood;
-    
 }
 
-.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8 {
+.cartao1, .cartao2, .cartao3, .cartao4, .cartao5, .cartao6, .cartao7, .cartao8{
     background-color:black;
     color: white;
 }
